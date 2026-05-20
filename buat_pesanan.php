@@ -4,7 +4,7 @@ include 'koneksi.php';
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-2 text-gray-800">Buat Pesanan</h1>
+    <h1 class="h3 mb-2 text-gray-800">Buat pesanan</h1>
     <div class="card shadow mb-4">
         <div class="card-body">
             <form method="POST">
