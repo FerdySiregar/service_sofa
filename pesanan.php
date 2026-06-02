@@ -51,7 +51,7 @@ include 'koneksi.php';
                             <td><?=$data['status']; ?></td>
 
                             <td>
-                                <!-- <a href="cetak_pdf.php?id=<?= $data['id_pesanan']; ?>" target="_blank" class="btn btn-sm btn-success">Cetak</a> -->
+                                <a href="cetak_pdf.php?id=<?= $data['id_pesanan']; ?>" target="_blank" class="btn btn-sm btn-success">Cetak</a>
 
                                 <a href="?page=ubah_pesanan&id=<?= $data['id_pesanan']; ?>" 
                                     class="btn btn-sm btn-info">Ubah</a>

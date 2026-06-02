@@ -37,8 +37,8 @@ if ($id) {
 <body>
 <div class="page">
 	<div class="header">
-		<h2>Daftar Pesanan</h2>
-		<div>Service Sofa - Cetak <?= $id ? 'Pesanan' : 'Semua Pesanan' ?></div>
+		<h2>Bukti Transaksi</h2>
+		<div>Service Sofa -  <?= $id ? 'Pesanan' : 'Semua Pesanan' ?></div>
 	</div>
 
 	<?php if (empty($orders)) : ?>
@@ -51,7 +51,7 @@ if ($id) {
 						<td><strong>Nama</strong></td>
 						<td>: <?= htmlspecialchars($ord['nama']); ?></td>
 						<td><strong>Tanggal</strong></td>
-						<td>: <?= htmlspecialchars($ord['tanggal']); ?></td>
+						<td><div>: <?= date('d-m-Y'); ?></div></td>
 					</tr>
 					<tr>
 						<td><strong>No. HP</strong></td>
@@ -84,7 +84,7 @@ if ($id) {
 							<td><?= htmlspecialchars($ord['warna']); ?></td>
 							<td class="right">Rp <?= number_format($ord['harga'], 0, ',', '.'); ?></td>
 							<td class="right">Rp <?= number_format($ord['dp'], 0, ',', '.'); ?></td>
-							<td class="right">Rp <?= number_format($ord['sisa'], 0, ',', '.'); ?></td>
+							<td class="right">Lunas</td>
 						</tr>
 					</tbody>
 				</table>
@@ -94,6 +94,7 @@ if ($id) {
 
 	<div style="font-size:12px; margin-top:20px;">Dicetak pada: <?= date('d-m-Y H:i'); ?></div>
 </div>
+
 
 <script>
 	// Otomatis memanggil dialog cetak pada saat halaman dibuka
